@@ -19,7 +19,7 @@ import fs from "fs"
     
     // console.log(uploadResult);
 
-    const UploadCloudinary = async (localFilePath)=>{
+    const UploadOnCloudinary = async (localFilePath)=>{
         try {
             if(!localFilePath) return null
             //upload the file on cloudinary
@@ -41,4 +41,4 @@ import fs from "fs"
 
 
     
-    export {UploadCloudinary}
+    export {UploadOnCloudinary}
