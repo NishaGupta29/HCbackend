@@ -11,11 +11,14 @@
 // connectDB()
 
 import dotenv from "dotenv";
+
+
+dotenv.config(
+   { path:"./.env"}
+);
+// console.log("INDEX:", process.env.CLOUDINARY_API_KEY);
 import connectDB from "./db/index.js";
 import { app } from "./app.js";
-
-dotenv.config();
-
 
 
 connectDB()
